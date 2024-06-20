@@ -19,10 +19,13 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
+      working-directory: ./chetan_gitreactdemo/react-chetan
       run: npm install
-
+  
     - name: Run tests
+      working-directory: ./chetan_gitreactdemo/react-chetan
       run: npm test
-
+  
     - name: Build the project
+      working-directory: ./chetan_gitreactdemo/react-chetan
       run: npm run build
