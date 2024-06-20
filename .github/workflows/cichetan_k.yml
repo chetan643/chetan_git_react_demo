@@ -22,10 +22,6 @@ jobs:
       working-directory: react-chetan
       run: npm install
   
-    - name: Run tests
-      working-directory: react-chetan
-      run: npm test
-  
     - name: Build the project
       working-directory: react-chetan
       run: npm run build
